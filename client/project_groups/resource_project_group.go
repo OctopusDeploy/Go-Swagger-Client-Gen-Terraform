@@ -12,7 +12,7 @@ func resourceProjectGroup() *schema.Resource {
 		Create: resourceProjectGroupCreate,
 		//Read:   resourceProjectGroupRead,
 		//Update: resourceProjectGroupUpdate,
-		//∂Delete: resourceProjectGroupDelete,
+		Delete: resourceProjectGroupDelete,
 
 		Schema: map[string]*schema.Schema{
 			"name": {
